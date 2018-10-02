@@ -9,9 +9,10 @@ object POIAnalysis2 {
     new LoggingTestWithRDD().doTest()
   }
 }
+
 case class Location(lat: Double, lon: Double)
 case class poloc(poi: String, loc: Double)
-
+ 
 trait DistanceCalcular {
   def calculateDistanceInKilometer(userLocation: Location, warehouseLocation: Location): Double
 }
